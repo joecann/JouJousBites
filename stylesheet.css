@@ -1,0 +1,531 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: navy;
+    scroll-behavior: smooth;
+}
+
+/*Top Menu*/
+.topbar{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    top: 0;
+    width: 100%;
+    height: 125px;
+    background-color: white;
+    z-index: 1;
+}
+
+.topbar a{
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.logo{
+    padding-top: 10px;
+    padding-left: 50px;
+    margin-right: auto;     
+}
+
+.instagram{
+    margin-left: auto;
+    padding-top: 10px;
+    padding-right: 50px;
+}
+
+/* Change background on mouse-over
+.nav_links a:hover {
+  }*/
+
+.nav_links li{
+    display: inline-block;
+    padding-left: 50px;
+    cursor: pointer;
+}
+
+.footer{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(25,25,112);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 25%;
+}
+
+.footer p{
+    color: white;
+}
+
+/*EVENTS BAR*/
+.findcontainer{
+    padding-top: 140px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(39,39,39);
+    height: 250px;
+    z-index: 1;
+}
+
+.findtext{
+    color: gold;
+}
+
+.findcontainer h2{
+    font-size: 25px;
+}
+
+.findcontainer p{
+    font-size: 20px;
+}
+
+/*HOME PAGE*/
+.introcontainer{
+    padding-top: 140px;
+    width: 100%;
+    height: 100vh;
+    background-color: pink;
+}
+
+.introvid{ 
+    width: 100%;
+    height: 100%;
+}
+
+/*WELCOME MESSAGE*/
+.welcomecontainer{
+    width: 100%;
+    height: auto;
+    text-align: center;  
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.welcomecontainer h2{
+    padding-top: 2%;
+    font-size: 50px;
+    color: gold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: navy;
+}
+
+.welcomecontainer p{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 17px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    line-height: 1.7;
+}
+
+.enquire{  
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    border:none;
+}
+
+.enquire:hover{  
+    background-color: pink;
+}
+
+/*ABOUT US TEXT:LEFT IMAGE:RIGHT*/
+.beginningscontainer{
+    width: 100%;
+    height: auto;
+    text-align: center; 
+    padding-bottom: 20px;
+}
+
+.beginningswrapper{
+    float: left;
+    width: 50%;
+    height: 500px;
+    line-height: 1.7;
+    text-align: center;
+    background-color: whitesmoke;
+    border: 25px solid white;
+}
+
+.beginningswrapper h2, .reviewcontainer h2{
+    font-size: 40px;
+    color: navy;
+    padding-top: 30px;
+}
+
+.beginningswrapper p, .reviewcontainer p{
+    font-size: 17px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+}
+
+.beginningsimage{
+    float: right;
+    width: 50%;
+    height: 500px;
+}
+
+.beginningsimage img{
+    width: 100%;
+    height: 500px;
+    border: 25px solid white;
+}
+
+
+/*IMAGE GALLERY*/
+.gallerycontainer{
+    height: 500px;
+    width: 50%;
+    float: left;
+}
+
+.gallerywrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.gallerywrapper img{
+    width: 85%;
+    height: 390px;
+    /*top right bottom left*/
+    border-top: 25px solid white;
+    border-bottom: 10px solid white;
+}
+
+.imageselector{
+    width: 100%;
+    height: 100px;
+    display: inline-flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.imageselector img{
+    height: 80px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.imageselector img:hover{
+    opacity: 1;
+}
+
+
+/*REVIEW CONTAINER*/
+
+.reviewcontainer{
+    width: 50%;
+    height: 500px;
+    position: relative;
+    float: right;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;  
+    border: 25px solid white;
+    transition: transform 0.5s ease-in-out;
+}
+
+.reviewwrapper{
+    position: absolute;
+    width: 100%;
+    height: 450px;    
+    line-height: 1.7;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+#review2, #review3, #review4{
+    visibility: hidden;
+}
+
+
+/*****TEAM***/
+.teamcontainer{
+    float: left;
+    width: 100%;
+    height: auto;
+    padding-top: 60px
+}
+
+.teamcontainer h2{
+    font-size: 50px;
+    text-align: center;
+    color: gold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: navy;
+    padding-bottom: 40px;
+}
+
+.teamcontainer h3{
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.teamcontainer p{
+    font-size: 17px;
+}
+
+.teamwrapper{
+    width: 100%;
+    height: auto;
+    line-height: 1.7;
+}
+
+.joujouimage, .joeimage{
+    float: left;
+    width: 50%;
+    height: 350px;
+}
+
+.joujouimage img, .joeimage img{
+    width: 400px;
+    height: 350px;
+    border-radius: 50%;
+    float: right;
+}
+
+.joujoutext, .joetext{
+    float: right;
+    width: 50%;
+    height: 350px;
+    padding-left: 30px;
+    padding-right: 60px;
+}
+
+.shaldersimage{
+    float: right;
+    width: 50%;
+    height: 350px;
+}
+
+.shaldersimage img{
+    width: 400px;
+    height: 350px;
+    border-radius: 50%;
+    float: left;
+}
+
+.shalderstext{
+    float: left;
+    width: 50%;
+    height: 350px;
+    text-align: right;
+    padding-right: 30px;
+    padding-left: 60px;
+}
+
+/*Partners*/
+.partnerscontainer{
+    width: 100%;
+    height: auto;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding-top: 60px;
+    float: left;
+}
+
+.partnerscontainer h2{
+    padding-top: 2%;
+    font-size: 50px;
+    color: gold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: navy;
+    padding-bottom: 20px;
+}
+
+.partnerscontainer p{
+    padding-bottom: 20px;
+}
+
+.partnerlogos{
+    width: 100%;
+    height: 500px;
+}
+.partnerlogos img{
+    width: 15%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+}
+
+/*MENU*/
+.downloadcontainer{
+    text-align: left;
+    padding-top: 140px;
+    padding-left: 30px;
+    width: 100%;
+    height: auto;
+}
+
+.downloadcontainer button{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+}
+
+.downloadcontainer button:hover{
+    background-color: navy;
+    color: gold;
+}
+
+.menucontainer{
+    background-color: whitesmoke ;
+    height: auto;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+.menucontainer li{
+    list-style-type: none;
+}
+
+.menucontainer h2{
+    font-size: 40px;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    color: gold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: navy;
+}
+
+.menucontainer p{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.menucontainer div{
+    width: 100%;
+    height: auto;
+}
+
+.menulist h3{
+    font-size: 30px;
+
+}
+
+
+
+/*Enquire*/
+.enquirecontainer{
+    padding-top: 120px;
+    height: 600px;
+    background-color: rgb(245,245,245);
+}
+
+
+@media screen and (max-width:1200px) {
+    .topbar a{
+        font-size: 20px;
+    }
+
+    .instagram{
+        padding-right: 10px;
+    }
+
+    .nav_links li{
+        padding-left: 20px;
+    }
+
+    .welcomecontainer{
+       height: auto;
+    }  
+    
+    .reviewcontainer, .gallerycontainer, .aboutusimage, .beginningswrapper, .beginningsimage{
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+    
+    .joujoutext, .joetext{
+        border-left: 10px solid aqua;
+        border-right: 10px solid aqua;
+    }
+
+    .teamwrapper img{
+        width: 320px;
+        height: 270px;
+    }
+
+    
+
+    .aboutusimage{
+        width: 100%;
+        height: auto;
+    }
+
+    .joujoutext, .shalderstext, .joetext{
+        border: none;
+    }
+
+    /*MENU PAGE*/
+    .menucontainer{
+        height: 145vh;
+    }
+
+    .menucontainer p{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .downloadcontainer button{
+        font-size: 15px;
+    }
+
+    .meettheteamcontainer{
+      display: block;
+      height: 1500px;
+    
+    }
+
+    .menucontainer div{
+        width: 100%;
+        height: auto;
+        border: none;
+    }
+
+    .employeecontainer{
+        padding-bottom: 70px;
+    }
+
+    .employeetext p{
+        text-align: center;
+    }
+
+    .corporate_and_events_text{
+        text-align: center;
+    }
+
+    
+}
+
+@media screen and (max-width:992px) {
+}
+
+@media screen and (max-width:768px) {
+}
+
+@media screen and (max-width:600px) {
+}
+
+

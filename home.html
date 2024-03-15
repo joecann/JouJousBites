@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Jou Jou's Bites/Home</title>
+</head>
+<body>
+    <!--<div class="findcontainer">
+        <h2 id="loc" class="findtext">Our next pop up event:</h2>
+        <p id="location" class="findtext"></p>
+        <p id="postcode" class="findtext"></p>
+        <p id="date" class="findtext"></p>
+        <p id="time" class="findtext"></p>-->
+    </div> 
+    <header class="topbar">
+        <img class="logo" src="images/logo.png" alt="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a>Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="enquire.html">Enquire</a></li>
+            </ul>
+        </nav>
+        
+        <a class="instagram" href="https://www.instagram.com/joujousbites.london/" target="_blank"> 
+            <img src="images/instagram.png" width="40px"> </a>
+        </a>
+    </header>   
+
+    <div class="introcontainer">
+        <video src="images/introvid.mp4" type="video/mp4" class="introvid" autoplay="autoplay" 
+        loop="loop" width="100%" muted="muted"> Image load error</video>   
+        <!--<button class="scroll"><a href="#welcome"></a><img src="images/arrow.png" alt=""></button>-->
+    </div>
+
+    <div class="welcomecontainer">
+        <h2>Welcome to Jou Jou's Bites</h2>        
+        <p>Welcome to Jou Jou's Bites, where we are both proud and excited to introduce you to the vibrant flavors of 
+            Taiwanese cuisine on the bustling street food scene. At Jou Jou's Bites, we offer a delightful array of 
+            options to tantalize your taste buds. Indulge in the comforting nostalgia of granny's traditional slow-cooked 
+            pork belly, evoking memories of home-cooked meals shared with loved ones. Or savor the authentic taste of Taiwanese 
+            milk tea, crafted with care and tradition. 
+            <br><br>            
+            For those with a sweet tooth, our Portuguese-inspired homemade pastel de natas promises a delectable treat 
+            that will leave you craving for more.
+            <br><br>
+            To embark on a culinary journey through Taiwanese cuisine, visit our food stall located at various street 
+            food markets across London each week. Additionally, we take pride in offering catering services for corporate 
+            events and special occasions. For more information or to inquire about our catering services, please click 
+            the link below to get in touch with us. We look forward to serving you soon!            
+        </p>  
+        
+        <Button class="enquire" onclick="window.location.href='enquire.html'">Enquire</Button> 
+        <!--<Button class="scroll2"><a href="#welcome"></a><img src="images/arrow.png" alt=""></Button>-->   
+    </div>        
+
+    <div class="beginningscontainer">
+        <div class="beginningswrapper">
+            <h2>Our Beginnings</h2>
+            <p>As a Taiwanese native, my wife has always encouraged me to indulge in the flavors of her childhood and 
+                the cherished recipes passed down from her grandmother. Each dish she prepares is a delightful symphony 
+                of taste and tradition, leaving me in awe every time. "You could sell this," I'd often remark, impressed
+                 by her culinary prowess. So, in November 2022, we took a leap of faith and launched our first 
+                 market stall. Though the hours are long, the journey has been incredibly rewarding. We've had the 
+                 pleasure of meeting countless wonderful individuals and the heartwarming feedback we've received has 
+                 fueled our passion even more.
+            </p>
+        </div>
+        <div class="beginningsimage">
+            <img src="images/image2.png" alt="">
+        </div>
+    </div> 
+
+    <div class="gallerycontainer"> 
+        <div class="gallerywrapper">    
+            <img id="image" src="" alt="food gallery">
+        </div>        
+        <div class="imageselector">
+            <img src="images/food/1.png" onclick="selectIndex(0)">
+            <img src="images/food/2.png" onclick="selectIndex(1)">
+            <img src="images/food/3.png" onclick="selectIndex(2)">
+            <img src="images/food/4.png" onclick="selectIndex(3)">
+            <img src="images/food/5.jpg" onclick="selectIndex(4)">
+        </div>
+    </div>
+
+    <div class="reviewcontainer">
+        <div class="reviewwrapper" id="review1">
+            <h2>What are people saying?</h2>
+            <p>"As a Taiwanese, I must say this meal is very traditional and also very delicious. 
+                Highly recommend this for those who love Taiwanese street food and those who want to 
+                try the real Taiwanese food."
+                <br><br>&#11088 &#11088 &#11088 &#11088 &#11088
+                <h3>Michelle Chiang</h3>
+            </p>
+        </div>
+
+        <div class="reviewwrapper" id="review2">
+            <h2>What are people saying? 2</h2>
+            <p>"As a Taiwanese, I must say this meal is very traditional and also very delicious. 
+                Highly recommend this for those who love Taiwanese street food and those who want to 
+                try the real Taiwanese food."
+                <br><br>&#11088 &#11088 &#11088 &#11088 &#11088
+                <h3>Michelle Chiang</h3>
+            </p>
+        </div>
+
+        <div class="reviewwrapper" id="review3">
+            <h2>What are people saying? 3</h2>
+            <p>"As a Taiwanese, I must say this meal is very traditional and also very delicious. 
+                Highly recommend this for those who love Taiwanese street food and those who want to 
+                try the real Taiwanese food."
+                <br><br>&#11088 &#11088 &#11088 &#11088 &#11088
+                <h3>Michelle Chiang</h3>
+            </p>
+        </div>
+
+        <div class="reviewwrapper" id="review4">
+            <h2>What are people saying? 3</h2>
+            <p>"As a Taiwanese, I must say this meal is very traditional and also very delicious. 
+                Highly recommend this for those who love Taiwanese street food and those who want to 
+                try the real Taiwanese food."
+                <br><br>&#11088 &#11088 &#11088 &#11088 &#11088
+                <h3>Michelle Chiang</h3>
+            </p>
+        </div>
+       
+        
+        <!--<div class="reviewslider">
+            <p>
+                "We ordered the pork size bowl when we got out of Decathlon in Surrey Quays. 
+                The bowl comes with a fried egg and fresh onions. The sauce/broth that comes with 
+                the rice is very tasty! Mix of sweet and salty. I regret not getting one of the 
+                sandwiches as they looked amazing, but we had already ordered some food from the other stalls. 
+                The lady who served our food was super nice and friendly 💚. 
+                I'm sure we will be back!" 
+                <br>&#11088 &#11088 &#11088 &#11088 &#11088
+                <h3>Maria P</h3>
+            </p>
+        </div>--> 
+           
+    </div>
+
+    <div class="teamcontainer">
+        <h2>Meet the Team</h2> 
+        <div class="teamwrapper">
+            <div class="joujouimage"><img src="images/team/joujou1.png" alt=""></div>
+            <div class="joujoutext">
+                <h3>Chia-Hou Chen (Jou Jou)</h3>
+                <h4>Co-Founder</h4>
+                <p>A crazy taiwanese gal who cooks food with my stinky feet. jkinhi hiuhui hbiuh
+                    jknhiuh huiuhui iuhuih ihuih hniuhui hniuh nhihnui nihni hnihniu ijio
+                </p>
+            </div>
+        </div>        
+        <div class="teamwrapper">
+            <div class="shaldersimage"> <img src="images/team/shalders1.png" alt=""></div>
+            <div class="shalderstext">
+                <h3>Mustapha Shaldoum</h3>
+                <h4>Co-Founder</h4>
+                <p>A crazy taiwanese gal who cooks food with my stinky feet</p>
+            </div>  
+        </div>
+        <div class="teamwrapper">
+            <div class="joeimage"><img src="images/team/joe1.jpg" alt=""></div>
+            <div class="joetext">
+                <h3>Joseph Cann</h3>
+                <p>A crazy taiwanese gal who cooks food with my stinky feet</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="partnerscontainer">
+        <h2>Our Partners</h2>
+        <p>Here at Jou Jou's Bites we are pround to work a variety of partners</p>
+        <div class="partnerlogos">
+            <img src="images/logos/ubs.jpg">
+            <img src="images/logos/amazon.png">
+            <img src="images/logos/statestreet.png">
+            <img src="images/logos/Goldman_Sachs_Blue_Box.png" alt="">
+
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer">
+        
+            <div class="address">           
+                <p>Company address</p>
+                <p>Company address</p>
+                <p>Company address</p>
+                <p>Company address</p>
+                <p>Company address</p>
+                <p>Copyright Joe Cann</p>
+            </div>
+        </div>
+        
+    </footer>
+    
+<script src="Backend.js"></script>
+<script src="DivSlider.js"></script>  
+</body>
+</html>
+
+
